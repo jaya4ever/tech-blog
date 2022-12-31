@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Bolg Project!</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+
+      <nav class="display-flex justify-space-around align-center p-2">
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/profile">Dashboard</a></h3>
+      
+        {{#if logged_in}}
+        <h3><button class="no-button" id="logout">logout</button></h3>
+        {{else}}
+        <h3><a href="/login">login</a></h3>
+        {{/if}}
+      </nav>
+
+    <main class="container container-fluid mt-5">
+
+      {{{ body }}}
+    </main>
+  </div>
+
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
