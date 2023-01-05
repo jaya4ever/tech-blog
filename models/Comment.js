@@ -13,26 +13,9 @@ Comment.init(
         comment_text: {
             type: DataTypes.STRING,
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'user',
-                key: 'id'
-            }
-        },
-        project_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'project',
-                key: 'id'
-            }
-        }
     },
     {
         sequelize,
-        timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'comment'

@@ -20,7 +20,7 @@ const editFormHandler = async (event) => {
     console.log(response);
 
     if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/dashboard');
     } else {
         alert('Failed to udpate project');
     }
