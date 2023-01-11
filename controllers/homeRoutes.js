@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
   try {
 
-    const projectData = await Project.findAll({
+    const projectData = await projects.findAll({
       include: [
         {
           model: User,
@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
         },
       ],
     });
+    console.log(projectData);
 
 
     const projects = projectData.map((project) => project.get({ plain: true }));
@@ -20,7 +21,8 @@ router.get('/', async (req, res) => {
 
     res.render('homepage', {
       projects,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      
     });
   } catch (err) {
     res.status(500).json(err);
@@ -29,7 +31,7 @@ router.get('/', async (req, res) => {
 
 router.get('/project/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const projectData = await project.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -86,6 +88,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 
 router.get('/dashboard/add', withAuth, (req, res) => {
   res.render('add');
