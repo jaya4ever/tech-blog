@@ -1,25 +1,33 @@
-async function newFormHandler(event) {
-    event.preventDefault();
-  
-    const title = document.querySelector('input[name="post-title"]').value;
-    const content = document.querySelector('input[name="content"]').value;
-  
-    const response = await fetch(`/api/posts`, {
+const postId = document.querySelector('input[name="post-id"]').value;
+
+console.log("testing");
+console.log(postId);
+
+const commentFormHandler = async (event) => {
+  event.preventDefault();
+
+  const commentContent = document.querySelector('textarea[name="comment-body"]').value;
+  console.log(commentContent);
+
+  if(commentContent) {
+    const response = await fetch('/api/comment', {
       method: 'POST',
       body: JSON.stringify({
-        title,
-        content
+        postId,
+        commentContent
       }),
       headers: {
         'Content-Type': 'application/json'
       }
     });
-  
     if (response.ok) {
-      document.location.replace('/dashboard');
+      document.location.reload();
     } else {
       alert(response.statusText);
     }
   };
-  
-  document.querySelector('#new-post-form').addEventListener('submit', newFormHandler);
+}
+
+document
+  .querySelector('#new-comment-form')
+  .addEventListener('submit', commentFormHandler);
