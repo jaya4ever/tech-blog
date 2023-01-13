@@ -1,5 +1,18 @@
 # tech-blog
 Tech Blog
+
+**NOTE**
+Sometimes Heroku stop responding. I am going to add the recording in the readme.md with the screenshot so that if heroku won't work then recording and screenshot may help the grader to look at this assignment. 
+
+
+## Description 
+This is a module challenge 14. This challenge is to create an application called Tech Blog. I worked on this application with the help of my tutor, my team and was doing practicing. I was going through the class recording, [Mozilla]( https://developer.mozilla.org/en-US/docs/Web/JavaScript "dev.Mozilla"), [w3schools](https://www.w3schools.com/js/ "w3Schools"), asked questions in [stackoverflow](https://stackoverflow.com "stackoverflow.com"). I took help from everyone while conpleting this challenge.The name of this application is Tech-Blog. A CMS-style blog site allows developers to publish create an account, edit their information, make posts, edit posts, and comment on other user's posts.’ posts. This application Deployed with heroku and follows the MVC paradigm architectually. 
+
+## this is my heroku Deploy
+[Heroku](https://arcane-chamber-57930.herokuapp.com "Heroku app")
+
+## this is my GitHub Resporitory 
+[GitHub](https://github.com/jaya4ever/tech-blog "GitHub Repository")
 ## User Story
 
 ```md
@@ -45,4 +58,20 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
+
+## Features Used in this application
+* JavaScript
+* Express Handlebars
+* MySQL2
+* Sequelize
+* Dotenv
+* Bcrypt Package
+* Express-Session Package
+* Connect-Session-Sequelize Package
+
+
+
+## License
+
+  Copyright (c) 2023 [GitHub](https://github.com/jaya4ever/tech-blog)  **Note** This application is under the [MIT](https://MIT-license.org)
 
