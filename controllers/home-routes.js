@@ -1,8 +1,7 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 
-// In this path, the main.handlebars template renders always and inside the {{{body}}} section....
-// We render the homepage.handlebars template
+
 router.get("/", (req, res) => {
   Post.findAll({
     include: [User],
