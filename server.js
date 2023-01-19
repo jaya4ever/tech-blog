@@ -8,7 +8,11 @@ const helpers = require('./utils/helpers');
 
 // handlebars
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({helpers});
+const hbs = exphbs.create({helpers:{
+  format_date: date => {
+    return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+}
+}});
 
 // session connection to sequelize database
 const session = require('express-session');
