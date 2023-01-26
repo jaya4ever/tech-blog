@@ -2,7 +2,8 @@
 Tech Blog
 
 **NOTE**
-Sometimes Heroku stop responding. I am going to add the recording in the readme.md with the screenshot so that if heroku won't work then recording and screenshot may help the grader to look at this assignment. 
+ I am going to add screenshot so that if heroku won't work then recording and screenshot may help the grader to look at this assignment. I have to improve the look of the site so I will keep working on the styling
+ 
 
 
 ## Description 
