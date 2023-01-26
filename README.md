@@ -13,6 +13,15 @@ This is a module challenge 14. This challenge is to create an application called
 
 ## this is my GitHub Resporitory 
 [GitHub](https://github.com/jaya4ever/tech-blog "GitHub Repository")
+
+## This is the screenshot 
+![techBlog1](https://user-images.githubusercontent.com/111536082/214732431-dd9e15e2-0bad-43d0-b2a1-7fbc26a4647a.jpeg)
+![techblog2](https://user-images.githubusercontent.com/111536082/214732503-ea810873-57aa-4390-974f-4922e3e8b82e.jpeg)
+![techblog3](https://user-images.githubusercontent.com/111536082/214732553-d0e5e159-a95d-4bd0-a79d-2572b89ef363.jpeg)
+![techblog4](https://user-images.githubusercontent.com/111536082/214732591-4eeaa6be-5e96-44f0-b5d5-c7083b44b027.jpeg)
+![techblog5](https://user-images.githubusercontent.com/111536082/214732625-66d23c4a-9cf6-466b-a1d1-4ba18f2652bb.jpeg)
+
+
 ## User Story
 
 ```md
