@@ -1,21 +1,25 @@
-# tech-blog
-Tech Blog
+# Tech-blog
+
 
 **NOTE**
  I am going to add screenshot so that if heroku won't work then recording and screenshot may help the grader to look at this assignment. I have to improve the look of the site so I will keep working on the styling
- 
+
+### What I submitted
+* My GitHub Repository
+* Screenshot of my application
+* My Heroku Deployment Site
 
 
 ## Description 
-This is a module challenge 14. This challenge is to create an application called Tech Blog. I worked on this application with the help of my tutor, my team and was doing practicing. I was going through the class recording, [Mozilla]( https://developer.mozilla.org/en-US/docs/Web/JavaScript "dev.Mozilla"), [w3schools](https://www.w3schools.com/js/ "w3Schools"), asked questions in [stackoverflow](https://stackoverflow.com "stackoverflow.com"). I took help from everyone while conpleting this challenge.The name of this application is Tech-Blog. A CMS-style blog site allows developers to publish create an account, edit their information, make posts, edit posts, and comment on other user's posts.’ posts. This application Deployed with heroku and follows the MVC paradigm architectually. 
+This is a module challenge 14. This challenge is to create an application called Tech Blog. I worked on this application with the help of my tutor, my team and was doing practicing. I was going through the class recording, [Mozilla]( https://developer.mozilla.org/en-US/docs/Web/JavaScript "dev.Mozilla"), [w3schools](https://www.w3schools.com/js/ "w3Schools"), asked questions in [stackoverflow](https://stackoverflow.com "stackoverflow.com"). I took help from everyone while completing this challenge.The name of this application is Tech-Blog. A CMS-style blog site allows developers to publish create an account, edit their information, make posts, edit posts, and comment on other user's posts. This application Deployed with heroku and follows the MVC paradigm architectually. This Tech Blog is a CMS style project utilising the MVC structure, routes, SQL and Handlebars templating.
 
-## this is my heroku Deploy
+## Deployed to Heroku
 [Heroku](https://arcane-chamber-57930.herokuapp.com "Heroku app")
 
-## this is my GitHub Resporitory 
+## My GitHub Resporitory 
 [GitHub](https://github.com/jaya4ever/tech-blog "GitHub Repository")
 
-## This is the screenshot 
+## This is the screenshots 
 ![techBlog1](https://user-images.githubusercontent.com/111536082/214732431-dd9e15e2-0bad-43d0-b2a1-7fbc26a4647a.jpeg)
 ![techblog2](https://user-images.githubusercontent.com/111536082/214732503-ea810873-57aa-4390-974f-4922e3e8b82e.jpeg)
 ![techblog3](https://user-images.githubusercontent.com/111536082/214732553-d0e5e159-a95d-4bd0-a79d-2572b89ef363.jpeg)
@@ -68,6 +72,21 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
+## Installation
+#### Have to Install NodeJS and then all these npm packages
+* npm i init -y
+* npm i
+* npm i bcrypt
+* npm i connect-session-sequelize
+* npm i dotenv
+* npm i express
+* npm i express-handlebars
+* npm i express-session
+* npm i handlebars
+* npm i inquirer
+* npm i mysql2
+* npm i nodemon
+* npm i sequelize
 
 ## Features Used in this application
 * JavaScript
